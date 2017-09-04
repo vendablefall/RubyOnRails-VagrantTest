@@ -43,4 +43,6 @@ echo -e "${YELLOW}  db mirtgrate${NC}"
 
 bin/rails db:migrate
 
+echo -e "${YELLOW}  generate show${NC}"
+
 cp /vagrant/files/show.html.erb /projects/testapp/app/views/articles/show.html.erb 
