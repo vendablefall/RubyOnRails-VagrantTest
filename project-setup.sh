@@ -46,3 +46,8 @@ bin/rails db:migrate
 echo -e "${YELLOW}  generate show${NC}"
 
 cp /vagrant/files/show.html.erb /projects/testapp/app/views/articles/show.html.erb 
+
+#https://stackoverflow.com/questions/4351844/how-to-run-rails-s-p80-on-80-port
+sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 3000
+
+bin/rails server 
