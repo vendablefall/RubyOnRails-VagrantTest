@@ -25,3 +25,12 @@ cp /vagrant/files/routes.rb /projects/testapp/config/
 echo -e "${YELLOW} generate controller Articles ${NC}"
 
 bin/rails generate controller Articles
+
+echo -e "${YELLOW}  remove old and copy new articles_controller${NC}"
+
+rm -f /projects/testapp/app/controllers/articles_controller.rb
+cp /vagrant/files/articles_controller.rb /projects/testapp/app/controllers/
+
+echo -e "${YELLOW} generate new.html.erb ${NC}"
+
+cp /vagrant/files/new.html.erb app/views/articles/
