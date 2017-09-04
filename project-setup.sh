@@ -34,3 +34,13 @@ cp /vagrant/files/articles_controller.rb /projects/testapp/app/controllers/
 echo -e "${YELLOW} generate new.html.erb ${NC}"
 
 cp /vagrant/files/new.html.erb app/views/articles/
+
+echo -e "${YELLOW} generate Articles model ${NC}"
+
+bin/rails generate model Article title:string text:text
+
+echo -e "${YELLOW}  db mirtgrate${NC}"
+
+bin/rails db:migrate
+
+cp /vagrant/files/show.html.erb /projects/testapp/app/views/articles/show.html.erb 
