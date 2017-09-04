@@ -9,5 +9,6 @@ echo -e "${YELLOW}apt-get install curl ${NC}"
 apt-get install -y curl
 
 mkdir /projects/
+chown vagrant /projects/
 
 echo -e "${YELLOW} ${NC}"
