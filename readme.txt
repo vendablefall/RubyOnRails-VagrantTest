@@ -13,6 +13,8 @@ http://guides.rubyonrails.org/getting_started.html
 
 To build the app, as mentioned before this was my first time building a stack from scratch.
 
+Llease connect to localhost:1337 see the web app
+
 Sincerely
 Alex Simpson
 
