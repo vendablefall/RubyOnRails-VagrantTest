@@ -13,4 +13,4 @@ echo -e "${YELLOW}  bundle install ${NC}"
 
 cd testapp
 
-bundle install 
+bundle install --path /projects/
