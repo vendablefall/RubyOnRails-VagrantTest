@@ -14,3 +14,9 @@ echo -e "${YELLOW}  bundle install ${NC}"
 cd testapp
 
 bundle install --path /projects/
+
+#http://guides.rubyonrails.org/getting_started.html
+
+echo -e "${YELLOW} generate controller Articles ${NC}"
+
+bin/rails generate controller Welcome index

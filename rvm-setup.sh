@@ -12,7 +12,7 @@ echo -e "${YELLOW} rvm use 2.2.5 ${NC}"
 rvm use 2.2.5
 #sleep 2
 echo -e "${YELLOW} gem install rails ${NC}"
-#cd /projects/
+cd /projects/
 
 gem install rails
 
