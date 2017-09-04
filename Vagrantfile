@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "hashicorp/precise64"
   config.vm.provision :shell, path: "bootstrap.sh"
   config.vm.provision :shell, path: "rvm-install.sh"
-
+  config.vm.provision :shell, path: "rvm-setup.sh"
   # Disable automatic box update checking. Ifll you disable this, then
   # boxes will only be checked for updates when the user runs
   # `vagrant box outdated`. This is not recommended.
